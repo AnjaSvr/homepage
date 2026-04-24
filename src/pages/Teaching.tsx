@@ -8,6 +8,8 @@ interface Course {
   code: string;
   term: string;
   description: string;
+  link?: string;
+  linkLabel?: string;
 }
 
 const courses: Course[] = [
@@ -15,7 +17,9 @@ const courses: Course[] = [
     title: "Knots Seminar",
     code: "",
     term: "winter semester 2025/26",
-    description: "",
+    description: "I co-organized a two-day student seminar on knot theory (March 26–27), covering topics including knot and link diagrams, Reidemeister moves, knot invariants, the Jones polynomial, braids and braid groups, tangles, Seifert surfaces, Chern–Simons theory, and Khovanov homology.",
+    link: "http://www.scheimbauer.at/teaching/knots25/knots.html",
+    linkLabel: "Syllabus & details"
   },
   {
     title: "Bordisms & TFTs",
@@ -70,7 +74,21 @@ const Teaching = () => {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-foreground">{course.description}</p>
+                      <p className="text-foreground mb-2">{course.description}</p>
+
+                      {course.link && (
+                        <p className="text-muted-foreground">
+                          {course.linkLabel ?? "More info"}{" "}
+                          <a
+                            href={course.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary underline hover:text-primary/80"
+                          >
+                            here
+                          </a>
+                        </p>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
