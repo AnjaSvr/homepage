@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // Use relative paths for local preview, absolute paths for GitHub Pages
-  base: mode === "production" ? "/AnjaSvr/" : "./",
+  base: mode === "production" ? "/homepage/" : "./",
   server: {
     host: "::",
     port: 8080,

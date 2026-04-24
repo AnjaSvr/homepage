@@ -7,7 +7,7 @@ import "./index.css";
 const isProduction = import.meta.env.PROD;
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename={isProduction ? "/AnjaSvr" : "/"}>
+  <BrowserRouter basename={isProduction ? "/homepage" : "/"}>
     <App />
   </BrowserRouter>
 );
