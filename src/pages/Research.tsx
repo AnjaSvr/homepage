@@ -68,6 +68,13 @@ const publications: Publication[] = [
 ];
 
 const talks: Talk[] = [
+   {
+    title: "Additivity of Constructible Factorization Algebras",
+    venue: "ALPE Seminar, IMAG, University of Montpellier",
+    date: "March 2026",
+    link: "https://www.math.univ-toulouse.fr/~rcampos/ALPE/next_event.html",
+    abstract: "Factorization algebras, introduced by Costello and Gwilliam, encode the structure of observables in perturbative quantum field theory and capture concepts such as the operator product and correlation functions. Beyond this, their local structures encompass familiar algebraic objects including associative and A_{\infty}-algebras, vertex algebras, bimodules, and E_n-algebras. Examples of the latter include (possibly braided) tensor categories and n-fold loop spaces. In many situations of interest, particularly in the presence of defects or boundaries, it is natural to consider constructible factorization algebras. Examples are given by factorization homology. In this talk, I will present recent joint work with Victor Carmona proving an additivity theorem for constructible factorization algebras on manifolds with corners, resolving a conjecture of Ginot. These results address the behavior of factorization algebras under products of spaces and are an important step in a more general additivity result for conical manifolds. Furthermore, results of this kind provide an essential step towards comparing the models for higher Morita categories developed by Scheimbauer and Haugseng, two widely used frameworks in the study of dualizability and topological field theories.",
+   },
   {
     title: "Additivity of Constructible Factorization Algebras",
     venue: "Quantum Universe Attract.Workshop, Hamburg",
@@ -82,6 +89,8 @@ const talks: Talk[] = [
     abstract: "Factorization algebras, introduced by Costello and Gwilliam, encode the structure of observables in perturbative quantum field theory, capturing concepts like the operator product and correlation functions. Beyond this, their local structures encompass notions such as associative algebras, vertex algebras, bimodules, and En-algebras. Examples of the latter are (possibly braided) tensor categories and n-fold loop spaces. In this talk, I will provide an overview of the surprisingly recently well-studied theory of locally constant factorization algebras. Building on this foundation, I will introduce a broader class of constructible factorization algebras, defined on manifolds with corners or, more generally, stratified manifolds. Examples are given by factorization homology. I will report on recent progress regarding the additivity of factorization algebras, including the additivity of the generalized Swiss cheese operad- a result inspired by Dunn’s theorem for the little disks operad. This is based on joint work with Victor Carmona. In our approach, we use the reformulation of factorization algebras within the framework of operads, which offers powerful tools to study their behavior over product spaces."
   },
 ];
+
+
 
 const Research = () => {
   return (

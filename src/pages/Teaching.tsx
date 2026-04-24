@@ -26,6 +26,8 @@ const courses: Course[] = [
     code: "",
     term: "winter semester 2023/24",
     description: "Taught by Claudia Scheimbauer, this course introduced cobordism, bordism rings, and topological field theories from a functorial perspective (Atiyah–Segal), with an outlook on connections to group representations. I organized and ran the exercise classes.",
+    link: "http://www.scheimbauer.at/teaching/TFT/TFTcourse.html",
+    linkLabel: "Syllabus & details"
   },
   {
     title: "Algebra",
