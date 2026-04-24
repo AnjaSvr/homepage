@@ -16,8 +16,8 @@ const courses: Course[] = [
   {
     title: "Topological Quantum Field Theory",
     code: "",
-    term: "summer semester 26",
-    description: "Taught by William Stewart, this course introduces topological quantum field theory from a functorial perspective, explaining how geometric objects and their gluing properties give rise to algebraic structures. Topics include cobordisms, Frobenius algebras, tensor categories, and higher categorical structures arising from cutting and gluing manifolds. I am organizing and running the exercise classes.",
+    term: "summer semester 2026",
+    description: "Taught by William Stewart, this course introduces topological quantum field theory from a functorial perspective, explaining how geometric objects and their gluing and cutting properties give rise to algebraic structures. Topics include cobordisms, Frobenius algebras, tensor categories, finite gauge theory and cobordism hypothesis. I am organizing and running the exercise classes.",
     link: "",
     linkLabel: ""
   },
