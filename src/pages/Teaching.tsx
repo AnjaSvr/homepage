@@ -14,6 +14,14 @@ interface Course {
 
 const courses: Course[] = [
   {
+    title: "Topological Quantum Field Theory",
+    code: "",
+    term: "summer semester 26",
+    description: "Taught by William Stewart, this course introduces topological quantum field theory from a functorial perspective, explaining how geometric objects and their gluing properties give rise to algebraic structures. Topics include cobordisms, Frobenius algebras, tensor categories, and higher categorical structures arising from cutting and gluing manifolds. I am organizing and running the exercise classes.",
+    link: "",
+    linkLabel: ""
+  },
+  {
     title: "Knots Seminar",
     code: "",
     term: "winter semester 2025/26",
