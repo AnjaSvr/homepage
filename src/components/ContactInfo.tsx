@@ -6,18 +6,18 @@ const ContactInfo = () => {
       <div className="flex items-center space-x-2">
         <Mail className="w-4 h-4" />
         <a href="mailto:svr@cit.tum.de" className="hover:underline">
-          svr@cit.tum.de
+          anja.svraka@uni-hamburg.de
         </a>
       </div>
 
       <div className="flex items-center space-x-2">
         <MapPin className="w-4 h-4" />
-        <span>Munich, Germany</span>
+        <span>Hamburg, Germany</span>
       </div>
 
       <div className="flex items-center space-x-2">
         <GraduationCap className="w-4 h-4" />
-        <span>Technical University Munich</span>
+        <span> University of Hamburg</span>
       </div>
     </div>
   );

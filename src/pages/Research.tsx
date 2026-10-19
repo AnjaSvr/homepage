@@ -20,13 +20,6 @@ interface Publication {
   keywords?: string;
 }
 
-interface Talk {
-  title: string;
-  venue: string; // university + city
-  date: string;
-  link?: string; // optional link 
-  abstract?: string; // optional abstract
-}
 
 
 
@@ -64,29 +57,6 @@ const publications: Publication[] = [
     abstract: "Global Categorical Symmetries are a powerful new tool for analyzing quantum field theories. This volume compiles lecture notes from the 2022 and 2023 summer schools on Global Categorical Symmetries, held at the Perimeter Institute for Theoretical Physics and at the Swiss Map Research Station in Les Diableret. I contributed to the notes for David Jordan’s lecture “IV. Applied Cobordism Hypothesis,” in collaboration with Jonte Gödicke and Aaron Hofer.",
     figure: symmetriesFigure,
     keywords: "symmetries in quantum field theory, anomalies, symmetry categories, cobordism hypothesis, finite symmetry in QFT"
-  },
-];
-
-const talks: Talk[] = [
-   {
-    title: "Additivity of Constructible Factorization Algebras",
-    venue: "ALPE Seminar, IMAG, University of Montpellier",
-    date: "March 2026",
-    link: "https://www.math.univ-toulouse.fr/~rcampos/ALPE/next_event.html",
-    abstract: "Factorization algebras, introduced by Costello and Gwilliam, encode the structure of observables in perturbative quantum field theory and capture concepts such as the operator product and correlation functions. Beyond this, their local structures encompass familiar algebraic objects including associative and A_{\infty}-algebras, vertex algebras, bimodules, and E_n-algebras. Examples of the latter include (possibly braided) tensor categories and n-fold loop spaces. In many situations of interest, particularly in the presence of defects or boundaries, it is natural to consider constructible factorization algebras. Examples are given by factorization homology. In this talk, I will present recent joint work with Victor Carmona proving an additivity theorem for constructible factorization algebras on manifolds with corners, resolving a conjecture of Ginot. These results address the behavior of factorization algebras under products of spaces and are an important step in a more general additivity result for conical manifolds. Furthermore, results of this kind provide an essential step towards comparing the models for higher Morita categories developed by Scheimbauer and Haugseng, two widely used frameworks in the study of dualizability and topological field theories.",
-   },
-  {
-    title: "Additivity of Constructible Factorization Algebras",
-    venue: "Quantum Universe Attract.Workshop, Hamburg",
-    date: "November 2025",
-    link: "https://indico.desy.de/event/50023/contributions/195134/",
-  },
-  {
-    title: "Additivity of Constructible Factorization Algebras",
-    venue: "Max Planck Institute for Mathematics in the Sciences, Leipzig",
-    date: "December 2024",
-    link: "https://www.mis.mpg.de/events/event/additivity-of-constructible-factorization-algebras",
-    abstract: "Factorization algebras, introduced by Costello and Gwilliam, encode the structure of observables in perturbative quantum field theory, capturing concepts like the operator product and correlation functions. Beyond this, their local structures encompass notions such as associative algebras, vertex algebras, bimodules, and En-algebras. Examples of the latter are (possibly braided) tensor categories and n-fold loop spaces. In this talk, I will provide an overview of the surprisingly recently well-studied theory of locally constant factorization algebras. Building on this foundation, I will introduce a broader class of constructible factorization algebras, defined on manifolds with corners or, more generally, stratified manifolds. Examples are given by factorization homology. I will report on recent progress regarding the additivity of factorization algebras, including the additivity of the generalized Swiss cheese operad- a result inspired by Dunn’s theorem for the little disks operad. This is based on joint work with Victor Carmona. In our approach, we use the reformulation of factorization algebras within the framework of operads, which offers powerful tools to study their behavior over product spaces."
   },
 ];
 
@@ -194,48 +164,6 @@ const Research = () => {
                 ))}
               </div>
             </section>
-
-            {/* Talks section */}
-            <section>
-              <h2 className="text-2xl font-bold text-foreground mb-6">Talks</h2>
-              <div className="space-y-4">
-                {talks.map((talk, index) => (
-                  <Card
-                    key={index}
-                    className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer border-2 hover:border-primary"
-                  >
-                    <CardHeader>
-                      <CardTitle className="text-xl">{talk.title}</CardTitle>
-                      <CardDescription className="text-base text-muted-foreground">
-                        {talk.link ? (
-                          <a
-                            href={talk.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary underline hover:text-primary/80"
-                          >
-                            {talk.venue}
-                          </a>
-                        ) : (
-                          talk.venue
-                        )}{" "}
-                        — {talk.date}
-                      </CardDescription>
-                    </CardHeader>
-
-                    {talk.abstract && (
-                      <CardContent>
-                        <p className="font-semibold text-foreground uppercase" style={{ fontVariant: "small-caps" }}>
-                          Abstract
-                        </p>
-                        <p className="text-muted-foreground">{talk.abstract}</p>
-                      </CardContent>
-                    )}
-                  </Card>
-                ))}
-              </div>
-            </section>
-
 
           </div>
         </div>

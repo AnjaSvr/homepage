@@ -129,19 +129,27 @@ const CV = () => {
             <FileText className="w-8 h-8 text-primary" />
             <h1 className="text-4xl font-bold text-foreground">Curriculum Vitae</h1>
           </div>
-
+        <section className="bg-card border border-border rounded-lg p-8 shadow-sm">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Positions</h2>
+          <div className="space-y-6">
+            <div className="border-l-4 border-primary pl-6">
+              <h3 className="text-xl font-semibold text-foreground">Postdoctoral Researcher</h3>
+              <p className="text-muted-foreground">University of Hamburg, since October 2026</p>
+            </div>
+          </div>
+        </section>
           <div className="space-y-8">
             <section className="bg-card border border-border rounded-lg p-8 shadow-sm">
               <h2 className="text-2xl font-bold text-foreground mb-6">Education</h2>
               <div className="space-y-6">
-                <div className="border-l-4 border-primary pl-6">
-                  <h3 className="text-xl font-semibold text-foreground">Ph.D. Candidate </h3>
-                  <p className="text-muted-foreground">Technical University of Munich, 2022- present</p>
-                  <p className="text-foreground mt-2">Topic: Additivity of Constructible Factorization Algebras</p>
-                  <p className="text-foreground mt-2">Supervisor: Prof. Dr. Claudia Scheimbauer</p>
-                  <p className="text-foreground mt-2">Co-supervisor: Dr. Tashi Walde</p>
-                  <p className="text-foreground mt-2">Expected Graduation: September 2026</p>
-                </div>
+               <div className="border-l-4 border-muted pl-6">
+                <h3 className="text-xl font-semibold text-foreground">Ph.D. in Mathematics</h3>
+                <p className="text-muted-foreground">Technical University of Munich, 2022–2026</p>
+                <p className="text-foreground mt-2">Thesis: Additivity of Constructible Factorization Algebras</p>
+                <p className="text-foreground mt-2">Supervisor: Prof. Dr. Claudia Scheimbauer</p>
+                <p className="text-foreground mt-2">Co-supervisor: Dr. Tashi Walde</p>
+                <p className="text-foreground mt-2">Completed: September 2026</p>
+              </div>
                 <div className="border-l-4 border-muted pl-6">
                   <h3 className="text-xl font-semibold text-foreground">Master of Science, Mathematics </h3>
                   <p className="text-muted-foreground">Technical University of Munich, 2019-2022</p>

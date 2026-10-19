@@ -17,10 +17,10 @@ const Header = () => {
               </h1>
             </Link>
             <p className="text-sm text-muted-foreground">
-              PhD Student · Department of Mathematics
+               Department of Mathematics
             </p>
             <p className="text-sm text-muted-foreground">
-              Technical University of Munich
+              University of Hamburg
             </p>
           </div>
 
@@ -30,6 +30,7 @@ const Header = () => {
               { path: "/", label: "Home" },
               { path: "/cv", label: "CV" },
               { path: "/research", label: "Research" },
+               { path: "/talks", label: "Talks" },
               { path: "/teaching", label: "Teaching" },
             ].map(({ path, label }) => (
               <Link
